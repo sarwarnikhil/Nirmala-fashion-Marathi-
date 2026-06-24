@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>निर्मला फॅशन - ब्लाऊज पॅटर्न्स</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; text-align: center; color: #333; }
+        header { background-color: #e91e63; color: white; padding: 20px; font-size: 24px; font-weight: bold; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 280px; padding: 20px; text-align: center; border: 1px solid #eee; }
+        .card img { max-width: 100%; height: auto; border-radius: 4px; background-color: #ddd; display: block; margin: 0 auto 15px auto; }
+        .card h3 { color: #e91e63; margin: 15px 0 10px 0; font-size: 18px; }
+        .price { font-size: 20px; font-weight: bold; color: #2e7d32; margin-bottom: 15px; }
+        .btn-buy { background-color: #e91e63; color: white; border: none; padding: 12px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; width: 80%; font-weight: bold; }
+        .btn-buy:hover { background-color: #c2185b; }
+        footer { background-color: #333; color: white; padding: 15px; margin-top: 50px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        ✂️ निर्मला फॅशन ब्लाऊज पॅटर्न्स दुकान ✂️
+        <p style="font-size: 16px; margin: 5px 0 0 0; font-weight: normal;">घरबसल्या परफेक्ट ब्लाऊज पेपर पॅटर्न्स खरेदी करा</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>कटोरी ब्लाऊज पेपर पॅटिंग (माप: ३२ ते ४२)</h3>
+            <p>परफेक्ट फिटिंगची १००% गॅरंटी. तुमच्या पत्त्यावर कुरियरने पाठवले जाईल.</p>
+            <div class="price">किंमत: ₹१४९</div>
+            <button class="btn-buy" onclick="buyPattern('कटोरी ब्लाऊज पॅटर्न')">आत्ताच खरेदी करा</button>
+        </div>
+
+        <div class="card">
+            <h3>प्रिन्सेस कट ब्लाऊज पेपर कटिंग (माप: ३६)</h3>
+            <p>नवीन ट्रेंडी डिझाईन, शिवण्यास अतिशय सोपे आणि रेडीमेड कटिंग.</p>
+            <div class="price">किंमत: ₹१९९</div>
+            <button class="btn-buy" onclick="buyPattern('प्रिन्सेस कट ब्लाऊज पॅटर्न')">आत्ताच खरेदी करा</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 निर्मला फॅशन मराठी. सर्व हक्क सुरक्षित.
+    </footer>
+
+    <script>
+        function buyPattern(patternName) {
+            // इथे तुमचा व्हाट्सॲप नंबर टाका (उदा. 919876543210)
+            var phoneNumber = "910000000000"; 
+            var text = "नमस्कार ताई, मला तुमची वेबसाईटवरून *" + patternName + "* खरेदी करायचा आहे. कृपया मला पुढील माहिती द्या.";
+            var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(text);
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
